@@ -1,7 +1,6 @@
 @import url(style.css);
 
-.contact,
-.form {
+.contact, .form {
     padding-top: 50px;
 }
 
@@ -46,8 +45,7 @@
     margin-top: 30px;
 }
 
-.form input,
-.form textarea {
+.form input, .form textarea {
     border-style: none;
     border-radius: 5px;
     background-color: #E5E7EB;
