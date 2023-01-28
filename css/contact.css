@@ -1,0 +1,102 @@
+@import url(style.css);
+
+.contact,
+.form {
+    padding-top: 50px;
+}
+
+.contact .title {
+    text-align: center;
+}
+
+.contact .container {
+    margin-top: 30px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 20px 0 20px 10px;
+    line-height: 40px
+}
+.contact-text li {
+    list-style-type: none;
+}
+
+.contact-text h3 {
+    font-size: 24px;
+}
+
+.location {
+    width: 100%;
+    max-width: 45vw;
+    height: auto;
+    border: none;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form input,
+.form textarea {
+    border-style: none;
+    border-radius: 5px;
+    background-color: #E5E7EB;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.form input {
+    width: 450px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.form textarea {
+    padding: 10px;
+    background-color: #E5E7EB;
+    resize: none;
+}
+
+.form-container .button {
+    width: 150px;
+    color: #F9FAF8;
+}
+
+@media all and (max-width: 1200px) {
+    .contact .container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .contact-text {
+        flex-direction: column;
+    }
+    .contact-text h3 {
+        padding-top: 10px;
+    }
+    .location {
+        max-width: 100vw;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .form .title {
+        text-align: center;
+    }
+    .form input {
+        width: 300px;
+        height: 40px;
+    }
+    .form .button {
+        align-self: center;
+    }
+}

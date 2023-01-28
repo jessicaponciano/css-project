@@ -1,0 +1,101 @@
+@import url(style.css);
+
+.circuit {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E5E7EB;
+    flex-wrap: wrap-reverse;
+    align-content: flex-end;
+
+}
+
+.circuit .title {
+    flex-grow: 1;
+    align-self: flex-start;
+    text-align: center;
+    order: 2;
+}
+
+.circuit-inner {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px; 
+}
+
+.circuit-inner p,
+.circuit-inner ul {
+    padding-top: 5px;
+    max-width: 470px;
+}
+
+.circuit-inner h3:nth-child(3) {
+    padding-top: 20px;
+}
+
+.circuit-inner picture {
+    width: auto;
+    height: 100%;
+    max-height: 65vh;
+}
+
+.circuit picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.prices {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.prices h3 {
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+.card-item {
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.card-item p {
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.card-item p:first-child {
+    font-size: 36px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-item p:nth-child(2) {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 18px;
+    padding: 5px;
+}
+    
+@media all and (max-width: 1300px) {
+    .circuit {
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    .circuit .title {
+        order: -1;
+        align-self: center;
+    }
+    .prices .container {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 1000px) {
+    .card-item {
+        margin-top: 15px;
+    }
+}
