@@ -21,8 +21,7 @@
     font-size: 18px; 
 }
 
-.circuit-inner p,
-.circuit-inner ul {
+.circuit-inner p, .circuit-inner ul {
     padding-top: 5px;
     max-width: 470px;
 }
@@ -60,7 +59,6 @@
 .card-item p {
     width: 100%;
     font-weight: bold;
-
 }
 
 .card-item p:first-child {
